@@ -1,0 +1,317 @@
+@import "../home-demo-one/home-demo-one.component.scss";
+@import "../machine-learning-demo/machine-learning-demo.component.scss";
+
+// About CSS
+.about-content {
+    .section-title {
+        text-align: start;
+        margin-bottom: 18px;
+
+        .bar {
+            margin: {
+                right: 0;
+                left: 0;
+            };
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+.about-inner-area {
+    margin-top: 60px;
+
+    .about-text {
+        h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .about-image {
+        margin-bottom: 30px;
+    }
+    .about-inner-area {
+        margin-top: 0;
+
+        .about-text {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .pricing-area {
+        padding-bottom: 20px;
+    }
+    .single-pricing-table {
+        padding: 25px 20px;
+        margin-bottom: 30px;
+
+        .pricing-header {
+            h3 {
+                font-size: 17px;
+            }
+            i {
+                &::before {
+                    font-size: 40px;
+                }
+            }
+        }
+        .price {
+            span {
+                font-size: 27px;
+            }
+        }
+    }
+    .iot-features-content {
+        order: 1;
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+    }
+    .iot-features-image {
+        order: 2;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .about-image {
+        margin-bottom: 45px;
+    }
+    .about-inner-area {
+        margin-top: 30px;
+
+        .about-text {
+            margin-top: 30px;
+        }
+    }
+    .pricing-area {
+        padding-bottom: 50px;
+    }
+    .single-pricing-table {
+        margin-bottom: 30px;
+    }
+
+    .iot-features-content {
+        order: 1;
+    }
+    .iot-features-image {
+        order: 2;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+}
+
+/*pricing-css*/
+.pricing-area {
+    position: relative;
+    z-index: 1;
+}
+.single-pricing-table {
+	text-align: center;
+	background: var(--whiteColor);
+	box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 35px;
+    transition: var(--transition);
+
+    .pricing-header {
+        i {
+            transition: var(--transition);
+
+            &::before {
+                font-size: 45px;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+            margin: 15px 0 20px;
+            font: {
+                size: 18px;
+                weight: 500;
+            };
+        }
+    }
+    .price {
+        margin-bottom: 20px;
+
+        span {
+            color: var(--mainColor);
+            font: {
+                size: 30px;
+                weight: 600;
+            };
+            sup {
+                font: {
+                    weight: 500;
+                };
+            }
+            span {
+                font: {
+                    size: 14px;
+                    weight: 500;
+                };
+            }
+        }
+    }
+    .pricing-features {
+        ul {
+            padding: 0;
+            margin: 0 0 30px;
+            list-style-type: none;
+
+            li {
+                color: var(--paragraphColor);
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                i-feather {
+                    width: 15px;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }
+    }
+    &.active-plan {
+        .btn-primary {
+            background: var(--purpleColor);
+            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+
+            &::after, &::before {
+                background: var(--mainColor);
+                box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+            }
+        }
+    }
+}
+
+/*services-css*/
+.iot-services-area {
+    padding-bottom: 50px;
+}
+.single-iot-services {
+    z-index: 1;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px dashed #cdf1d8;
+    background-color: var(--whiteColor);
+    
+    &::after {
+        position: absolute;
+        transition: var(--transition);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--gradientColor);
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+    }
+    h3 {
+        font-size: 18px;
+        transition: var(--transition);
+        margin: {
+            top: 22px;
+            bottom: 17px;
+        }
+        line-height: 1.5;
+    }
+    .icon {
+        display: inline-block;
+        color: var(--mainColor);
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        border: 1px solid #e3f7e9;
+        border-radius: 50%;
+        transition: var(--transition);
+
+        i {
+            &::before {
+                font-size: 35px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 25px;
+        transition: var(--transition);
+    }
+    a {
+        width: 35px;
+        background-color: #f9fafb;
+        height: 35px;
+        line-height: 35px;
+        color: var(--blackColor);
+        border-radius: 50%;
+
+        i-feather {
+            width: 15px;
+        }
+    }
+    &:hover, &:focus {
+        &::after {
+            opacity: 1;
+            visibility: visible;
+        }
+        h3 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: var(--whiteColor);
+        }
+        .icon {
+            border-color: var(--whiteColor);
+            color: var(--whiteColor);
+        }
+        a {
+            background-color: var(--whiteColor);
+            color: var(--mainColor);
+        }
+    }
+}
+
+/*features-css*/
+.iot-features-content {
+    h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin-top: 15px;
+    }
+}
+.iot-features-image {
+    position: relative;
+    text-align: center;
+}

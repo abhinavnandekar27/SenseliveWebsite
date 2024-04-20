@@ -1,0 +1,74 @@
+<div
+    class="navbar-area"
+    [ngClass]="{'sticky': isSticky}"
+>
+    <div class="container-fluid" style="background-color: white;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/"><img src="../../../../assets/senselive/senselive_logo.png" alt="logo" style="height: 80px; width: 80px;"></a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="/solution" class="nav-link dropdown-toggle">Solution </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/solution" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link" style="color: grey;  font-size: 17px;"><b>Senselive Industry 4.0 Solutions</b></a></li>
+                            <li class="nav-item"><a routerLink="/energy" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Energy Management System</a></li>
+                            <li class="nav-item"><a routerLink="/realtime" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Real Time Production Productivity Monitoring</a></li>
+                            <li class="nav-item"><a routerLink="/asset" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Asset and Machine Monitoring</a></li>
+                            <li class="nav-item"><a routerLink="/production" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Production Down Time Tracking</a></li>
+                            <li class="nav-item"><a routerLink="/predictive" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Predictive Maintenance</a></li>
+                            <li class="nav-item"><a routerLink="/water" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Water Management System</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item"><a href="/platform" class="nav-link dropdown-toggle">Platform</a>
+                        <ul class="dropdown-menu">
+                                <li class="nav-item"><a routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link" style="color: grey;  font-size: 17px;"><b>Senselive IoT & AI Platform</b></a></li>
+                            <li class="nav-item"><a href="/aiplatform" class="nav-link dropdown-toggle">Senselive Edge AI Layer<i-feather name="chevron-right"></i-feather></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a routerLink="/services" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Modsense</a></li>
+                                    <li class="nav-item"><a routerLink="/services-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">GatewayX</a></li>
+                                    <li class="nav-item"><a routerLink="/services-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Pulsewave</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Industrial IoT Apps<i-feather name="chevron-right"></i-feather></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a routerLink="/projects" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link"> Machine Monitoring</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Machine Maintenance</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Machine Control</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Production Insights</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Production Tracking</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Custom app</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/customers" class="nav-link dropdown-toggle">Customer</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/customers" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Customer Overview</a></li>
+                            <li class="nav-item"><a routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Customer Casestudy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/about-1" class="nav-link dropdown-toggle">About</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/about-1" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a routerLink="/partners" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Partners</a></li>
+                            <li class="nav-item"><a routerLink="/careers" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Careers</a></li>
+                            <li class="nav-item"><a routerLink="/contact" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Contact</a></li>
+                        </ul>
+                    </li>
+                   
+                    
+                </ul>
+                <div class="others-option">
+                    <a routerLink="/" class="btn btn-primary">Request a Demo</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
