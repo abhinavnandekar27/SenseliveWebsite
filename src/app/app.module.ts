@@ -63,6 +63,7 @@ import { AiplatformComponent } from './components/pages/aiplatform/aiplatform.co
 import { CareersComponent } from './components/pages/careers/careers.component';
 import { PlatformComponent } from './components/pages/platform/platform.component';
 import { HashLocationStrategy,LocationStrategy } from '@angular/common';
+import { ResourcesComponent } from './components/pages/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -120,6 +121,7 @@ import { HashLocationStrategy,LocationStrategy } from '@angular/common';
     AiplatformComponent,
     CareersComponent,
     PlatformComponent,
+    ResourcesComponent,
 
   ],
   imports: [

@@ -47,6 +47,7 @@ import { ConnectpageComponent } from './components/pages/connectpage/connectpage
 import { CareersComponent } from './components/pages/careers/careers.component';
 import { AiplatformComponent } from './components/pages/aiplatform/aiplatform.component';
 import { PlatformComponent } from './components/pages/platform/platform.component';
+import { ResourcesComponent } from './components/pages/resources/resources.component';
 
 const routes: Routes = [
     { path: '', component: HomeDemoOneComponent },
@@ -95,6 +96,7 @@ const routes: Routes = [
     { path: 'careers', component: CareersComponent},
     { path: 'aiplatform', component: AiplatformComponent},
     { path: 'platform', component: PlatformComponent},
+    { path: 'resources', component: ResourcesComponent},
     { path: '**', component: NotFoundComponent } // This line will remain down from the whole pages component list
 ];
 
