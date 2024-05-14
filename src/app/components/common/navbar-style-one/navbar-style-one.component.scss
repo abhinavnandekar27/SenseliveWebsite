@@ -251,88 +251,12 @@
                 i-feather {
                     width: 15px;
                 }
-                span {
-                    display: inline-block;
-                    color: var(--whiteColor);
-                    background-color: red;
-                    line-height: 14px;
-                    text-align: center;
-                    border-radius: 50%;
-                    position: relative;
-                    font-size: 9px;
-                    width: 13px;
-                    height: 13px;
-                    top: -7px;
-                    right: 4px;
-                }
+                
             }
-            .btn {
-                &.btn-light {
-                    border: 2px dashed #cdf1d8;
-                    box-shadow: unset !important;
-                    background: transparent;
-                    padding: 12px 33px;
-                    margin-right: 15px;
-
-                    &:focus {
-                        color: var(--blackColor) !important
-                    }
-                    &:hover, &:focus {
-                        color: var(--whiteColor);
-                        border-color: var(--mainColor);
-                    }
-                    &::after, &::before {
-                        background: var(--mainColor);
-                    }
-                }
-                &.btn-primary {
-                    background: var(--purpleColor);
-                    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-                    &::after, &::before {
-                        background: var(--mainColor);
-                        box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-                    }
-                }
-            }
+            
         }
     }
-    &.navbar-style-two {
-        background-color: var(--whiteColor);
-    }
-    &.navbar-style-three {
-        .navbar {
-            padding: {
-                left: 25px;
-                right: 25px;
-            };
-        }
-    }
-    &.navbar-style-four {
-        .navbar {
-            padding: {
-                left: 25px;
-                right: 25px;
-            };
-            .navbar-nav {
-                margin-left: 20px;
-            }
-            .others-option {
-                margin-left: auto;
-            }
-        }
-    }
-    &.navbar-style-five {
-        .navbar {
-            padding: {
-                left: 25px;
-                right: 25px;
-            };
-            .others-option {
-                margin-left: 0;
-            }
-        }
-    }
+   
     &.navbar-color-white {
         .navbar {
             .navbar-nav {
@@ -411,17 +335,7 @@
                 .cart-wrapper-btn {
                     color: var(--whiteColor);
                 }
-                .btn {
-                    &.btn-primary {
-                        background: var(--purpleColor);
-                        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-    
-                        &::after, &::before {
-                            background: var(--mainColor);
-                            box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-                        }
-                    }
-                }
+                
             }
         }
         &.sticky {

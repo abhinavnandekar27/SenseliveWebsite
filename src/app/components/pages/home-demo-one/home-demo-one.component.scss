@@ -393,19 +393,16 @@
         position: absolute;
         right: 30px;
         top: 50%;
-        margin-top: -27px;
-
-        &::before, &::after {
-            background: var(--mainColor);
-        }
+        margin-top: -27px; 
+    }
+    .btnhero {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        margin-top: -27px; 
     }
     .btn-primary {
-        background: var(--purpleColor);
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-        &:hover, &:focus {
-            box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-        }
+        color: 0 13px 27px 0 rgba(68, 206, 111, 0.25);  
     }
 }
 
