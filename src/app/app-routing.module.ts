@@ -48,6 +48,7 @@ import { CareersComponent } from './components/pages/careers/careers.component';
 import { AiplatformComponent } from './components/pages/aiplatform/aiplatform.component';
 import { PlatformComponent } from './components/pages/platform/platform.component';
 import { ResourcesComponent } from './components/pages/resources/resources.component';
+import { ModsenseComponent } from './components/pages/modsense/modsense.component';
 
 const routes: Routes = [
     { path: '', component: HomeDemoOneComponent },
@@ -97,6 +98,7 @@ const routes: Routes = [
     { path: 'aiplatform', component: AiplatformComponent},
     { path: 'platform', component: PlatformComponent},
     { path: 'resources', component: ResourcesComponent},
+    { path: 'modsense', component: ModsenseComponent},
     { path: '**', component: NotFoundComponent } // This line will remain down from the whole pages component list
 ];
 

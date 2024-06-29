@@ -64,6 +64,8 @@ import { CareersComponent } from './components/pages/careers/careers.component';
 import { PlatformComponent } from './components/pages/platform/platform.component';
 import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 import { ResourcesComponent } from './components/pages/resources/resources.component';
+import { ModsenseComponent } from './components/pages/modsense/modsense.component';
+
 
 @NgModule({
   declarations: [
@@ -122,6 +124,7 @@ import { ResourcesComponent } from './components/pages/resources/resources.compo
     CareersComponent,
     PlatformComponent,
     ResourcesComponent,
+    ModsenseComponent,
 
   ],
   imports: [
