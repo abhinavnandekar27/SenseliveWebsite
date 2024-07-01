@@ -65,6 +65,8 @@ import { PlatformComponent } from './components/pages/platform/platform.componen
 import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 import { ResourcesComponent } from './components/pages/resources/resources.component';
 import { ModsenseComponent } from './components/pages/modsense/modsense.component';
+import { SenseBLEComponent } from './components/pages/sense-ble/sense-ble.component';
+import { PoegatewayComponent } from './components/pages/poegateway/poegateway.component';
 
 
 @NgModule({
@@ -125,7 +127,8 @@ import { ModsenseComponent } from './components/pages/modsense/modsense.componen
     PlatformComponent,
     ResourcesComponent,
     ModsenseComponent,
-
+    SenseBLEComponent,
+    PoegatewayComponent,
   ],
   imports: [
     BrowserModule,

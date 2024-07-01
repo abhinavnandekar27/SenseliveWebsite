@@ -49,6 +49,8 @@ import { AiplatformComponent } from './components/pages/aiplatform/aiplatform.co
 import { PlatformComponent } from './components/pages/platform/platform.component';
 import { ResourcesComponent } from './components/pages/resources/resources.component';
 import { ModsenseComponent } from './components/pages/modsense/modsense.component';
+import { SenseBLEComponent } from './components/pages/sense-ble/sense-ble.component';
+import { PoegatewayComponent } from './components/pages/poegateway/poegateway.component';
 
 const routes: Routes = [
     { path: '', component: HomeDemoOneComponent },
@@ -99,6 +101,8 @@ const routes: Routes = [
     { path: 'platform', component: PlatformComponent},
     { path: 'resources', component: ResourcesComponent},
     { path: 'modsense', component: ModsenseComponent},
+    { path: 'senseBLE', component: SenseBLEComponent},
+    { path: 'poe', component: PoegatewayComponent},
     { path: '**', component: NotFoundComponent } // This line will remain down from the whole pages component list
 ];
 
