@@ -67,6 +67,7 @@ import { ResourcesComponent } from './components/pages/resources/resources.compo
 import { ModsenseComponent } from './components/pages/modsense/modsense.component';
 import { SenseBLEComponent } from './components/pages/sense-ble/sense-ble.component';
 import { PoegatewayComponent } from './components/pages/poegateway/poegateway.component';
+import { IndustrialiotComponent } from './components/pages/industrialiot/industrialiot.component';
 
 
 @NgModule({
@@ -129,6 +130,7 @@ import { PoegatewayComponent } from './components/pages/poegateway/poegateway.co
     ModsenseComponent,
     SenseBLEComponent,
     PoegatewayComponent,
+    IndustrialiotComponent,
   ],
   imports: [
     BrowserModule,
